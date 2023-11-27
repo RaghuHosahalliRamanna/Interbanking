@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Interbanking" parallel="tests">
+	<listeners>
+		<listener class-name="com.interbanking.utilities.Reporting"></listener>
+	</listeners>
+	<test name="BankingApp">
+		<parameter name="browsers" value="chrome"></parameter>
+		<classes>
+			<!-- <class
+			name="com.interbanking.testcases.TC_LoginPage_001"></class> -->
+			<class name="com.interbanking.testcases.TC_LoginPage_DDT_002"></class>
+		</classes>
+	</test>
+</suite>
